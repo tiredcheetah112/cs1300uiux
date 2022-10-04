@@ -1,0 +1,122 @@
+body {
+    background-color: #e7e7ef;
+    opacity: 1.5;
+    /* background-image: conic-gradient(#787471, #393738);   */
+  }
+
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    text-transform: uppercase;
+    background-image: linear-gradient(
+      -225deg,
+      #231557 0%,
+      #44107a 29%,
+      #ff1361 67%,
+      #fff800 100%
+    );
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    font-size: 80px;
+}
+
+h2{
+  animation: bounce 3s linear infinite;
+  color: blueviolet;
+}
+
+h2,h3{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    width: auto
+}
+
+h3{
+  font-style: italic;
+  color:darkmagenta;
+}
+
+.center, p, .part2text{
+    text-align:center;
+    list-style-position: inside;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+ul li { padding: 8px 0px;
+        width: 200;
+      text-size-adjust: 300; }
+
+
+
+.boldedimg { 
+    font-weight: normal;
+}
+
+.item1, .item2, .item3{
+    display: flex;
+    flex-direction:row-reverse;
+    justify-content: space-evenly;
+    animation: mover 3s linear infinite;
+    display: block;
+    width: 500;
+    background-color: rgb(244, 198, 236);
+    padding: 1em;
+    border-radius: 1.5em;
+    margin: 1em;
+    box-shadow: 4px 7px rgb(204, 110, 223); 
+}
+
+
+@keyframes mover
+{
+    0%{
+        text-shadow: 0 0 30px rgba(0, 0, 0, 0);
+      }
+    50%{
+        text-shadow: 0 0 30px rgba(0, 0, 0, 0.30);
+        transform: translateY(10px);
+      }
+    100%
+      {
+        text-shadow: 0 0 30px rgba(0, 0, 0, 0);
+      }
+}
+
+@keyframes bounce {
+	0%, 100%, 20%, 50%, 80% {
+		-webkit-transform: translateY(0);
+		-ms-transform:     translateY(0);
+		transform:         translateY(0)
+	}
+	40% {
+		-webkit-transform: translateY(-8px);
+		-ms-transform:     translateY(-8px);
+		transform:         translateY(-8px)
+	}
+	60% {
+		-webkit-transform: translateY(-8px);
+		-ms-transform:     translateY(-8px);
+		transform:         translateY(-8px)
+	}
+}
+/* getting the container to show around the image */
+
+.image-container, .picture-container{
+    display: flex;
+    flex-direction:row-reverse;
+    justify-content: space-evenly;
+
+}
+
+@keyframes textclip {
+    to {
+      background-position: 200% center;
+    }
+  }
+
+
